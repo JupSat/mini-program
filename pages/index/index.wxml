@@ -5,7 +5,9 @@
       <view class="userinfo-avatar" bindtap="bindViewTap">
         <open-data type="userAvatarUrl"></open-data>
       </view>
-      <open-data type="userNickName"></open-data>
+      <view bindtap="toLogin">
+        <open-data type="userNickName"></open-data>
+      </view>
     </block>
     <block wx:elif="{{!hasUserInfo}}">
       <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>

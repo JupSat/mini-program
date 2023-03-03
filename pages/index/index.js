@@ -17,6 +17,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  toLogin() {
+    wx.navigateTo({
+      url: '../login/index'
+    })
+  },
   onLoad() {
     if (wx.getUserProfile) {
       this.setData({
