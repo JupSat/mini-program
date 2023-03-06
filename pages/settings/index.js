@@ -1,6 +1,5 @@
 const util = require('../../utils/util.js');
 const api = require('../../config/api.js');
-let app = getApp();
 Page({
     data: {
         name: '',
