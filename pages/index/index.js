@@ -22,6 +22,11 @@ Page({
       url: '../login/index'
     })
   },
+  toSetting() {
+    wx.navigateTo({
+      url: '../settings/index'
+    })
+  },
   onLoad() {
     if (wx.getUserProfile) {
       this.setData({
